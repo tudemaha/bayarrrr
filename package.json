@@ -1,0 +1,25 @@
+{
+  "name": "bayarrrr",
+  "version": "1.0.0",
+  "description": "WhatsApp bot client to collect debt based on whatsapp-web.js",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tudemaha/bayarrrr.git"
+  },
+  "keywords": [
+    "bayarrrr"
+  ],
+  "author": "Tude Maha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tudemaha/bayarrrr/issues"
+  },
+  "homepage": "https://github.com/tudemaha/bayarrrr#readme",
+  "dependencies": {
+    "mongoose": "^8.2.1"
+  }
+}
