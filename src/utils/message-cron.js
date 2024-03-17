@@ -43,7 +43,7 @@ const createAndSendMessage = async (waClient) => {
 };
 
 const scheduleMessage = (waClient) => {
-  cron.schedule("*/5 * * * *", () => createAndSendMessage(waClient), {
+  cron.schedule("0 8 * * 3", () => createAndSendMessage(waClient), {
     timezone: "Asia/Makassar",
   });
 };

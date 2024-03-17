@@ -7,7 +7,7 @@ const Payment = require("../model/Payment");
   await mongoConnect();
   await Payment.create({
     name: "Tude Maha",
-    wa: "+6285676453095",
+    wa: "+6285123456789",
     description: "pembayaran servis laptop",
     items: [
       {
