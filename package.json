@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/tudemaha/bayarrrr#readme",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "mongoose": "^8.2.1"
   }
 }
