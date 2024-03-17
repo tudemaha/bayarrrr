@@ -3,6 +3,7 @@ const qrcode = require("qrcode-terminal");
 const clientReadyHandler = (client, ...actions) => {
   client.on("ready", () => {
     console.log("Client is ready!");
+    actions.forEach((action) => action(client));
   });
 };
 

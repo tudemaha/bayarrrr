@@ -7,15 +7,17 @@ const {
   messageRegexHandler,
   pingHandler,
 } = require("./src/controller/whatsapp-controller");
+const scheduleMessage = require('./src/utils/message-cron')
 
 const startMongo = async () => {
   await mongoConnect();
 };
 
 const startWa = () => {
-  clientReadyHandler(waClient);
   qrReadyHandler(waClient);
+  clientReadyHandler(waClient, scheduleMessage);
   pingHandler(waClient);
+
   messageRegexHandler({
     regex: /^[Pp]+$/,
     rep:
@@ -26,6 +28,7 @@ const startWa = () => {
       `_This message was sent by bot._`,
     client: waClient,
   });
+
   waClient.initialize();
 };
 
