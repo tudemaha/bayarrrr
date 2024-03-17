@@ -7,7 +7,7 @@ const {
   messageRegexHandler,
   pingHandler,
 } = require("./src/controller/whatsapp-controller");
-const scheduleMessage = require('./src/utils/message-cron')
+const scheduleMessage = require("./src/utils/message-cron");
 
 const startMongo = async () => {
   await mongoConnect();
